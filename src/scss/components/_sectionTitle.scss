@@ -1,0 +1,42 @@
+.section_title {
+  position: relative;
+  text-align: center;
+  width: 630px;
+  height: 211px;
+  &:before {
+    content: "";
+    background: url("../../assets/sectionTitle/rightIcon.svg") center
+      center/cover no-repeat;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 0;
+    right: 0;
+  }
+  &::after {
+    content: "";
+    background: url("../../assets/sectionTitle/leftIcon.svg") center
+      center/cover no-repeat;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.title-main {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #202020;
+}
+
+.subtitle-main {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 140%;
+  color: #202020;
+}

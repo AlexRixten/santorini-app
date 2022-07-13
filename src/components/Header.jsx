@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { Link } from 'react-router-dom';
 import logo from '../assets/header/logo.svg'
+import SectionTitle from './SectionTitle';
 
 const navBarList = [
   {
@@ -82,8 +83,8 @@ const Header = () => {
     <>
       <header className='header'>
         <Container>
-          <Row >
-            <Col>
+          <Row className='d-flex align-items-center'>
+            <Col size={12} xl={9} lg={8} md={7}>
               <div className='header_btn' onClick={handleShow}>
                 <span></span>
                 <span></span>
@@ -107,6 +108,9 @@ const Header = () => {
                         </li>
                       ))}
                     </ul>
+                    <Link className="header_link-btn" to='/'>
+                      Забронировать
+                    </Link>
                   </nav>
                 </Offcanvas.Body>
               </Offcanvas>
@@ -114,7 +118,14 @@ const Header = () => {
                 <img className='header_logo' src={logo} alt="logo" />
               </Link>
             </Col>
+            <Col className="header_col">
+              <Link className="header_link-btn" to='/'>
+                Забронировать
+              </Link>
+            </Col>
           </Row>
+
+          <SectionTitle title={'Номера'} subtitle={'Выбери свой номер'}/>
 
         </Container>
       </header>

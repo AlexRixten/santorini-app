@@ -10,7 +10,7 @@ const Header = () => {
   const handleShow = () => setShow(true);
   return (
     <>
-      <header>
+      <header className='header'>
         <Container>
           <Button variant="primary" onClick={handleShow}>
             Launch
@@ -20,7 +20,7 @@ const Header = () => {
               <Offcanvas.Title>Offcanvas</Offcanvas.Title>
             </Offcanvas.Header>
             <Offcanvas.Body>
-              
+
             </Offcanvas.Body>
           </Offcanvas>
         </Container>

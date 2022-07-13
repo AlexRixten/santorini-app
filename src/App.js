@@ -21,6 +21,8 @@ import Way from './page/Way'
 
 import NotPage from './page/NotPage'
 
+import './scss/app.scss';
+
 
 function App() {
   return (
